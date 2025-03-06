@@ -33,19 +33,31 @@ const doubledNumbers = numbers.map((number) => {
 console.log(doubledNumbers) // [2, 4, 6, 8, 10]
 
 const backpackFullOfAmmo = [
-  { item: 'bullet', qunatity: 10, priceEa: 0.5 },
-  { item: 'shotgun shells', qunatity: 4, priceEa: 0.5 },
-  { item: 'rockets', qunatity: 1, priceEa: 5.0 },
-  { item: 'energy cell units', qunatity: 20, priceEa: 0.2 },
+  { item: 'bullet', quantity: 10, priceEa: 0.5 },
+  { item: 'shotgun shells', quantity: 4, priceEa: 0.5 },
+  { item: 'rockets', quantity: 1, priceEa: 5.0 },
+  { item: 'energy cell units', quantity: 20, priceEa: 0.2 },
 ]
 
-function calculateOrderCost(order) {
-  return order.quantity * order.priceEa
+const tableRows = backpackFullOfAmmo
+  .map((ammo) => {
+    return `<tr>
+              <td>${ammo.item}</td>
+              <td>${ammo.quantity}</td>
+              <td>${ammo.priceEa}</td>
+            </tr>`
+  })
+  .join('\n')
+
+console.log(tableRows)
+
+// eslint-disable-next-line no-unused-vars
+const number = [1, 2, 3, 4, 5]
+// eslint-disable-next-line no-unused-vars
+const doubleNumbers = []
+
+for (let i = 0; i < numbers.length; i++) {
+  doubledNumbers.push(`<li>${numbers[i] * 2}</li>`)
 }
 
-const totalValue = backpackFullOfAmmo.map((ammo) => {
-  console.log(ammo)
-
-  return 'hi'
-})
-console.log(totalValue)
+console.log(doubledNumbers.join('\n'))
