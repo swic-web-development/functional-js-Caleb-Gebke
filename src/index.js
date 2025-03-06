@@ -1,3 +1,5 @@
-var x = 3;
-
-console.log(x);
+// biome-ignore lint/complexity/useArrowFunction: <explanation>
+const greet = function () {
+  return 'Hello, World!'
+}
+console.log(greet())
