@@ -1,5 +1,5 @@
 const greet = () => 'Hello, World!'
-console.log(greet())
+//console.log(greet())
 
 // eslint-disable-next-line no-unused-vars
 const calcOrderCost = (order) => order.quantity * order.priceEa
@@ -23,14 +23,14 @@ function triple(number) {
 doSomethingWithNumber(10, divideByTwo) // 5
 doSomethingWithNumber(10, double) // 20
 doSomethingWithNumber(10, triple) // 30
-console.log(doSomethingWithNumber(10, divideByTwo)) // 5
+//console.log(doSomethingWithNumber(10, divideByTwo)) // 5
 
 const numbers = [1, 2, 3, 4, 5]
 const doubledNumbers = numbers.map((number) => {
   return number * 2
 })
 
-console.log(doubledNumbers) // [2, 4, 6, 8, 10]
+//console.log(doubledNumbers) // [2, 4, 6, 8, 10]
 
 const backpackFullOfAmmo = [
   { item: 'bullet', quantity: 10, priceEa: 0.5 },
@@ -49,7 +49,7 @@ const tableRows = backpackFullOfAmmo
   })
   .join('\n')
 
-console.log(tableRows)
+//console.log(tableRows)
 
 // eslint-disable-next-line no-unused-vars
 const number = [1, 2, 3, 4, 5]
@@ -60,4 +60,4 @@ for (let i = 0; i < numbers.length; i++) {
   doubledNumbers.push(`<li>${numbers[i] * 2}</li>`)
 }
 
-console.log(doubledNumbers.join('\n'))
+//console.log(doubledNumbers.join('\n'))
