@@ -63,3 +63,20 @@ const sortedNumbers = numbas.sort((a, b) => {
 
 console.log(sortedNumbers)
 // [1, 2, 3, 5, 8]
+
+///coding challenge
+
+const backpackFullOfAmmo = [
+  { item: 'bullets', quantity: 10, priceEa: 0.5 },
+  { item: 'shotgun shells', quantity: 4, priceEa: 0.5 },
+  { item: 'rockets', quantity: 1, priceEa: 5.0 },
+  { item: 'energy cell units', quantity: 20, priceEa: 0.2 },
+]
+const totalValue = backpackFullOfAmmo.reduce((total, ammo) => {
+  return total + ammo.quantity * ammo.priceEa
+}, 0)
+
+console.log(totalValue) // 16
+//the reduce method is used to calculate the total value of the items in the backpackFullOfAmmo array
+// the total value is calculated by multiplying the quantity of each item by the price of each item and then adding the result to the total value
+// We saw this in a previous exercise where we used the accumulator to add each total to the next price of each item
