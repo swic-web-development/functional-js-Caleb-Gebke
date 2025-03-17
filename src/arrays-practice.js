@@ -35,6 +35,7 @@ console.log(totalFrags)
 
 //practicing the find method
 const firstPlayerWithMoreFragsThanDeaths = players.find((player) => player.frags > player.deaths)
+
 console.log(firstPlayerWithMoreFragsThanDeaths)
 // { name: 'DoomGuy', frags: 25, deaths: 0 }
 
@@ -42,3 +43,23 @@ console.log(firstPlayerWithMoreFragsThanDeaths)
 const hasFrags = players.some((player) => player.frags)
 
 console.log(hasFrags) // true
+
+//practicing the every method
+const allPlayersHaveFrags = players.every((player) => player.frags)
+
+console.log(allPlayersHaveFrags) // false
+
+//practicing the sort method
+const sortedPlayers = players.sort((a, b) => b.frags - a.frags)
+
+console.log(sortedPlayers)
+
+const numbas = [5, 3, 8, 1, 2] //testing the sort method
+const sortedNumbers = numbas.sort((a, b) => {
+  console.log(`Now comparing a: ${a}, b: ${b}`)
+
+  return a - b
+})
+
+console.log(sortedNumbers)
+// [1, 2, 3, 5, 8]
